@@ -6,14 +6,22 @@
 }
 
 html{
-  background-color: var(--white-main);
   font-family: 'Lato', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body{
+  background-color: var(--white-main);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main{
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
 }
 
 /* Introduction section */
@@ -21,9 +29,11 @@ body{
 .intro{
   display: grid;
   grid-template-columns: 2fr 4fr;
+  padding: 20px;
 }
 
 .intro-photo{
+  margin-top: 15%;
   display: flex;
   justify-content: center;
 }
@@ -32,7 +42,6 @@ body{
   position: absolute;
   color: var(--white-main);
   text-shadow: 2px 2px 5px var(--black-main);
-
 }
 
 .jed-pose{
@@ -61,6 +70,10 @@ body{
 }
 
 /* Projects section */
+
+.projs{
+  padding: 20px;
+}
 
 .projects{
   display: flex;
@@ -115,6 +128,23 @@ body{
 
 /* Contact section */
 
+.dark-bg{
+  background-color: var(--black-main);
+  width: auto;
+}
+
 .contact{
-  border: 3px solid red;
+  max-width: 1200px;
+  margin: auto;
+  color: var(--white-main);
+
+  display: grid;
+  grid-template-columns: 4fr 2fr ;
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.contact > div > p{
+  font-size: 20px;
 }
