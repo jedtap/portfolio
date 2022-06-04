@@ -16,11 +16,6 @@ body{
   margin:auto;
 }
 
-.projs, .end{
-  border: 3px solid red;
-}
-
-
 /* Introduction section */
 
 .intro{
@@ -42,7 +37,8 @@ body{
 
 .jed-pose{
   width: 300px;
-  height: auto;
+  height: 300px;
+  border-radius: 15px;
 }
 
 .intro-text{
@@ -62,4 +58,63 @@ body{
 
 :hover.icon{
   transform: scale(1.1, 1.1);
+}
+
+/* Projects section */
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.tile{
+  border: 5px solid var(--black-main);
+  border-radius: 10px;
+  width: 300px;
+  height: 325px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.tile > img{
+  border-radius: 5px;
+}
+
+.tile-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tile-header > h2{
+  font-size: 20px;
+}
+
+.tile-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.icon-tile{
+  width: 25px;
+  height: auto;
+}
+
+:hover.icon-tile{
+  transform: scale(1.1, 1.1);
+}
+
+.tile > p{
+  padding: 10px;
+  margin: 0;
+}
+
+/* Contact section */
+
+.contact{
+  border: 3px solid red;
 }
