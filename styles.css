@@ -148,3 +148,16 @@ body{
 .contact > div > p{
   font-size: 20px;
 }
+
+/* Media query */
+
+@media (max-width: 700px) {
+  .intro, .contact {
+    display: block;
+  }
+
+  .contact-image{
+    display: flex;
+    justify-content: center;
+  }
+}
