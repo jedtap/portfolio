@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --black-main: #262626;
+  --white-main: #f8f8f8;
+}
+
+html{
+  background-color: var(--white-main);
+  font-family: 'Lato', sans-serif;
+
+}
+
+body{
+  max-width: 1200px;
+  margin:auto;
+}
+
+.projs, .end{
+  border: 3px solid red;
+}
+
+
+/* Introduction section */
+
+.intro{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.intro-photo{
+  display: flex;
+  justify-content: center;
+}
+
+.meet-jed{
+  position: absolute;
+  color: var(--white-main);
+  text-shadow: 2px 2px 5px var(--black-main);
+
+}
+
+.jed-pose{
+  width: 300px;
+  height: auto;
+}
+
+.intro-text{
+  font-size: 20px;
+  padding: 12px;
+}
+
+.socials{
+  display: flex;
+  gap: 10px;
+}
+
+.icon{
+  width: 40px;
+  height: auto;
+}
+
+:hover.icon{
+  transform: scale(1.1, 1.1);
+}
